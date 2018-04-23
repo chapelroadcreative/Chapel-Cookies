@@ -1,0 +1,75 @@
+/**
+ * Chapel Cookies - SCSS stylesheet
+ * Version: 1.0.7
+ * Created: 19/04/2018
+ * Last updated: 19/04/2018
+ * Author: Derek O'Brien @ Chapel Road Creative
+ * Author URI: http://chapelroadcreative.co.uk
+ * Licence: GPL2
+ * Licence URI: https://www.gnu.org/gpl-2.0.html
+ */
+
+$highlight: green;
+$color: white;
+$background-color: black;
+$link-color: #cccccc;
+
+#cc_status {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px 45px 15px 30px;
+    border-left: 20px solid green;
+    max-width: 320px;
+    border-top-left-radius: 6px;
+    z-index: 9999999999999;
+    h4 {
+        font-size: 16px;
+        color: green;
+    }
+    a {
+        color: #cccccc;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    hr {
+        margin: 5px 0px;
+        border-color: transparent;
+    }
+    .exit {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        border: 2px solid white;
+        border-radius: 4px;
+        color: white;
+        background-color: green;
+        cursor: pointer;
+    }
+    .exit:focus,
+    .exit:hover {
+        border: 2px solid green;
+        color: green;
+        background-color: white;
+    }
+
+    #cc_credits {
+        position: absolute;
+        bottom: 0;
+        left: 30;
+        padding: 5px 0px;
+    }
+
+    .agree {
+        cursor: pointer;
+        text-shadow: 0;
+    }
+}

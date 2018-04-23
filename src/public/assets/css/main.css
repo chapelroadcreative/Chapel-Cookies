@@ -1,0 +1,58 @@
+/* line 1, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+#cc_status {
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 15px 45px 15px 30px;
+  border-left: 20px solid green;
+  max-width: 320px;
+  border-top-left-radius: 6px;
+  z-index: 9999999999999; }
+  /* line 12, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status h4 {
+    font-size: 16px;
+    color: green; }
+  /* line 16, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status a {
+    color: #cccccc;
+    text-decoration: none; }
+    /* line 19, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+    #cc_status a:focus, #cc_status a:hover {
+      text-decoration: underline; }
+  /* line 24, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status hr {
+    margin: 5px 0px;
+    border-color: transparent; }
+  /* line 28, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status .exit {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: green;
+    cursor: pointer; }
+  /* line 40, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status .exit:focus,
+  #cc_status .exit:hover {
+    border: 2px solid green;
+    color: green;
+    background-color: white; }
+  /* line 47, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status #cc_credits {
+    position: absolute;
+    bottom: 0;
+    left: 30;
+    padding: 5px 0px; }
+  /* line 54, /Applications/MAMP/htdocs/playground/gdpr/www/scss/styles.scss */
+  #cc_status .agree {
+    cursor: pointer;
+    text-shadow: 0; }
+
+/*# sourceMappingURL=styles.css.map */

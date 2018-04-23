@@ -1,0 +1,318 @@
+<?php
+
+/**
+ * Chapel Cookies - helpers
+ * Version: 1.0.7
+ * Created: 19/04/2018
+ * Last updated: 19/04/2018
+ * Author: Derek O'Brien @ Chapel Road Creative
+ * Author URI: http://chapelroadcreative.co.uk
+ * Licence: GPL2
+ * Licence URI: https://www.gnu.org/gpl-2.0.html
+ */
+
+ // 6.1
+ function chapel_cookies_get_google_analytics_current_options() {
+
+ 	// setup our return variable
+ 	$current_options = array();
+
+ 	try {
+
+ 		// build our current options associative array
+ 		$current_options = array(
+ 			'chapel_cookies_google_analytics_enabled' => chapel_cookies_google_analytics_get_option('chapel_cookies_google_analytics_enabled'),
+ 			'chapel_cookies_google_analytics_tracking_code' => chapel_cookies_google_analytics_get_option('chapel_cookies_google_analytics_tracking_code'),
+ 		);
+
+ 	} catch( Exception $e ) {
+
+ 		// php error
+
+ 	}
+
+ 	// return current options
+ 	return $current_options;
+
+ }
+
+ // 6.2
+ function chapel_cookies_google_analytics_get_option( $option_name ) {
+
+	// setup return variable
+	$option_value = '';
+
+
+	try {
+
+		// get default option values
+		$defaults = chapel_cookies_get_google_analytics_default_options();
+
+		// get the requested option
+		switch( $option_name ) {
+			case 'chapel_cookies_google_analytics_enabled':
+				// Google Analytics status
+				$option_value = (get_option('chapel_cookies_google_analytics_enabled')) ? get_option('chapel_cookies_google_analytics_enabled') : $defaults['chapel_cookies_google_analytics_enabled'];
+				break;
+			case 'chapel_cookies_google_analytics_tracking_code':
+				// Google Analytics tracking code
+				$option_value = (get_option('chapel_cookies_google_analytics_tracking_code')) ? get_option('chapel_cookies_google_analytics_tracking_code') : $defaults['chapel_cookies_google_analytics_tracking_code'];
+				break;
+		}
+
+	} catch( Exception $e) {
+
+		// php error
+
+	}
+
+	// return option value or it's default
+	return $option_value;
+
+}
+
+// 6.3
+function chapel_cookies_get_google_analytics_default_options() {
+
+	$defaults = array();
+
+	try {
+
+		// setup defaults array
+		$defaults = array(
+			'chapel_cookies_google_analytics_enabled'=> 0,
+			'chapel_cookies_google_analytics_tracking_code'=> '',
+		);
+
+	} catch( Exception $e) {
+
+		// php error
+
+	}
+
+	// return defaults
+	return $defaults;
+
+
+}
+
+// 6.4
+function chapel_cookies_get_hotjar_current_options() {
+
+ // setup our return variable
+ $current_options = array();
+
+ try {
+
+   // build our current options associative array
+   $current_options = array(
+     'chapel_cookies_hotjar_enabled' => chapel_cookies_get_hotjar_option('chapel_cookies_hotjar_enabled'),
+     'chapel_cookies_hotjar_site_id' => chapel_cookies_get_hotjar_option('chapel_cookies_hotjar_site_id'),
+   );
+
+ } catch( Exception $e ) {
+
+   // php error
+
+ }
+
+ // return current options
+ return $current_options;
+
+}
+
+// 6.5
+function chapel_cookies_get_hotjar_option( $option_name ) {
+
+ // setup return variable
+ $option_value = '';
+
+
+ try {
+
+   // get default option values
+   $defaults = chapel_cookies_get_hotjar_default_options();
+
+   // get the requested option
+   switch( $option_name ) {
+     case 'chapel_cookies_hotjar_enabled':
+       // Hotjar status
+       $option_value = (get_option('chapel_cookies_hotjar_enabled')) ? get_option('chapel_cookies_hotjar_enabled') : $defaults['chapel_cookies_hotjar_enabled'];
+       break;
+     case 'chapel_cookies_hotjar_site_id':
+       // Hotjar site id
+       $option_value = (get_option('chapel_cookies_hotjar_site_id')) ? get_option('chapel_cookies_hotjar_site_id') : $defaults['chapel_cookies_hotjar_site_id'];
+       break;
+   }
+
+ } catch( Exception $e) {
+
+   // php error
+
+ }
+
+ // return option value or it's default
+ return $option_value;
+
+}
+
+// 6.6
+function chapel_cookies_get_hotjar_default_options() {
+
+ $defaults = array();
+
+ try {
+
+   // setup defaults array
+   $defaults = array(
+     'chapel_cookies_hotjar_enabled'=> 0,
+     'chapel_cookies_hotjar_site_id'=> '',
+   );
+
+ } catch( Exception $e) {
+
+   // php error
+
+ }
+
+ // return defaults
+ return $defaults;
+
+
+}
+
+// 6.7
+function chapel_cookies_get_customise_current_options() {
+
+ // setup our return variable
+ $current_options = array();
+
+ try {
+
+   // build our current options associative array
+   $current_options = array(
+     'chapel_cookies_customise_content_message' => chapel_cookies_get_customise_option('chapel_cookies_customise_content_message'),
+     'chapel_cookies_customise_content_button_label' => chapel_cookies_get_customise_option('chapel_cookies_customise_content_button_label'),
+     'chapel_cookies_customise_colours_text' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_text'),
+     'chapel_cookies_customise_colours_background' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_background'),
+     'chapel_cookies_customise_colours_highlight' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_highlight'),
+   );
+
+ } catch( Exception $e ) {
+
+   // php error
+
+ }
+
+ // return current options
+ return $current_options;
+
+}
+
+// 6.8
+function chapel_cookies_get_customise_option( $option_name ) {
+
+ // setup return variable
+ $option_value = '';
+
+
+ try {
+
+   // get default option values
+   $defaults = chapel_cookies_get_customise_default_options();
+
+   // get the requested option
+   switch( $option_name ) {
+     case 'chapel_cookies_customise_content_message':
+       // notice message
+       $option_value = (get_option('chapel_cookies_customise_content_message')) ? get_option('chapel_cookies_customise_content_message') : $defaults['chapel_cookies_customise_content_message'];
+       break;
+     case 'chapel_cookies_customise_content_button_label':
+       // notice button label
+       $option_value = (get_option('chapel_cookies_customise_content_button_label')) ? get_option('chapel_cookies_customise_content_button_label') : $defaults['chapel_cookies_customise_content_button_label'];
+       break;
+     case 'chapel_cookies_customise_colours_text':
+       // notice text colour
+       $option_value = (get_option('chapel_cookies_customise_colours_text')) ? get_option('chapel_cookies_customise_colours_text') : $defaults['chapel_cookies_customise_colours_text'];
+       break;
+     case 'chapel_cookies_customise_colours_background':
+       // notice background color
+       $option_value = (get_option('chapel_cookies_customise_colours_background')) ? get_option('chapel_cookies_customise_colours_background') : $defaults['chapel_cookies_customise_colours_background'];
+       break;
+     case 'chapel_cookies_customise_colours_highlight':
+       // notice highlight colour
+       $option_value = (get_option('chapel_cookies_customise_colours_highlight')) ? get_option('chapel_cookies_customise_colours_highlight') : $defaults['chapel_cookies_customise_colours_highlight'];
+       break;
+   }
+
+ } catch( Exception $e) {
+
+   // php error
+
+ }
+
+ // return option value or it's default
+ return $option_value;
+
+}
+
+// 6.9
+function chapel_cookies_get_customise_default_options() {
+
+ $defaults = array();
+
+ try {
+
+   // setup defaults array
+   $defaults = array(
+     'chapel_cookies_customise_content_message'=> 'We use cookies (“cookies”) to help give you the best experience on our site.<br>If you continue to use this site, we’ll assume that you’re happy for us to use cookies.',
+     'chapel_cookies_customise_content_button_label'=> 'agree and close',
+     'chapel_cookies_customise_colours_text'=> '#ffffff',
+     'chapel_cookies_customise_colours_background'=> '#000000',
+     'chapel_cookies_customise_colours_highlight'=> '#068100',
+   );
+
+ } catch( Exception $e) {
+
+   // php error
+
+ }
+
+ // return defaults
+ return $defaults;
+
+
+}
+
+//6.10
+function  chapel_cookies_plugin_action_links ( $actions, $plugin_file,  $action_links = array(), $position = 'after' ) {
+
+  static $plugin;
+
+  if( !isset($plugin) ) {
+      $plugin = 'chapel-cookies/chapel-cookies.php';
+  }
+
+  if( $plugin == $plugin_file && !empty( $action_links ) ) {
+
+     foreach( $action_links as $key => $value ) {
+
+        $link = array( $key => '<a href="' . $value['url'] . '">' . $value['label'] . '</a>' );
+
+         if( $position == 'after' ) {
+
+            $actions = array_merge( $actions, $link );
+
+         } else {
+
+            $actions = array_merge( $link, $actions );
+         }
+
+
+      } //foreach
+
+  } // if
+
+  return $actions;
+
+}
