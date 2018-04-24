@@ -1,6 +1,6 @@
 /**
 * Chapel Cookies - public JS
-* Version: 1.0.6
+* Version: 1.0.8
 * Created: 19/04/2018
 * Last updated: 19/04/2018
 * Author: Derek O'Brien @ Chapel Road Creative
@@ -24,8 +24,21 @@
     $( document ).ready(function() {
 
         $DBug = false;
-        $privacy = document.location.protocol + "//" + document.location.host + "/privacy/";
-        $cookies = document.location.protocol + "//" + document.location.host + "/cookies/";
+
+        $privacy_enabled = chapel_cookies_public_js_main_notice.privacy_enabled;
+        if(chapel_cookies_public_js_main_notice.privacy_url == '') {
+          $privacy_url = document.location.protocol + "//" + document.location.host + "/privacy/";
+        } else {
+          $privacy_url = chapel_cookies_public_js_main_notice.privacy_url;
+        }
+
+        $cookie_enabled = chapel_cookies_public_js_main_notice.cookie_enabled;
+        if(chapel_cookies_public_js_main_notice.privacy_url == '') {
+          $cookie_url = document.location.protocol + "//" + document.location.host + "/cookies/";
+        } else {
+          $cookie_url = chapel_cookies_public_js_main_notice.privacy_url;
+        }
+
         $message = chapel_cookies_public_js_main_notice.message;
         $label = chapel_cookies_public_js_main_notice.label;
         $h = $('#cc_status').height() - 15;
@@ -46,10 +59,19 @@
 
         function addCC () {
             removeCC(); // if exists
-
-            $('body').append(
-                '<div id="cc_status" class="notice"><h4>Privacy and cookies</h4><p>' + $message + '</p><span class="exit">' + $label + '</span><br><span class="small"><a href="' + $privacy + '" target="_blank">Read our privacy policy</a><br><a href="' + $cookies + '" target="_blank">Find out how to manage cookies.</a></span></div>'
-            );
+            $o =  '<div id="cc_status" class="notice"><h4>Privacy and cookies</h4>';
+              $o += '<p>' + $message + '</p>';
+              $o += '<span class="exit">' + $label + '</span><br>';
+              $o += '<span class="small">';
+              if($privacy_enabled == "on") {
+                $o += '<a href="' + $privacy_url + '" target="_blank">Read our privacy policy</a><br>';
+              }
+              if($cookie_enabled == "on") {
+                $o += '<a href="' + $cookie_url + '" target="_blank">Find out how to manage cookies.</a>';
+              }
+              $o += '</span>';
+            $o += '</div>';
+            $('body').append($o);
             $('#cc_status span.exit').on('click', closeCC);
             $h = $('#cc_status').height() - 15;
 

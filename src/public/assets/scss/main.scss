@@ -1,6 +1,6 @@
 /**
  * Chapel Cookies - SCSS stylesheet
- * Version: 1.0.7
+ * Version: 1.0.8
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -28,6 +28,7 @@ $link-color: #cccccc;
     z-index: 9999999999999;
     h4 {
         font-size: 16px;
+        font-weight: bold;
         color: green;
     }
     a {

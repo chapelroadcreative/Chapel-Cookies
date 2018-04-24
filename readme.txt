@@ -1,10 +1,10 @@
 === Chapel Cookies ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: chapelroadcreative
 Tags: EU, cookies, privacy, regulations, law.
 Requires at least: 4.0
 Tested up to: 4.9.5
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,8 +14,8 @@ Plugin to comply with EU cookie regulations by implementing required info pages 
 
 Plugin to comply with EU cookie regulations by implementing required info pages and a user notice.
 
-The plugin dynamically creates two pages within generic privacy information and user support for cookie management.
-Both these pages are linked to within the cookie notice to provide relevant information and support for the website user.
+The plugin can dynamically creates two pages within generic privacy information and user support for cookie management.
+Both these pages are linked to within the cookie notice to provide relevant information and support for the website user, either can be hidden if required.
 
 You can also enable Google Analytics and Hotjar tracking within this plugin if required.
 
@@ -43,9 +43,8 @@ e.g.
 1. Upload the plugin zip archive to the plugin folder of your website.
 2. Unarchive the zip file to expand the plugin.
 3. Activate the plugin through the 'Plugins' menu in WordPress by clicking activate.
-4. Go to the 'Pages' section and edit the 'Privacy Policy' and 'Cookies' pages to suit your needs.
+4. Configure settings in the 'Chapel Cookies - Customise' page where required.
 5. If applicable enable and enter codes to enable Google Analytics and Hotjar if required.
-6. Modify the Privacy and Cookie message and style the notice should you wish.
 
 == Frequently Asked Questions ==
 
@@ -59,6 +58,11 @@ Please direct all support via the support system from where you acquired this pl
 If you acquired the plugin directly from Chapel Road Creative please email us at plugins@chapelroadcreative.co.uk referencing your support ID or company name.
 
 == Changelog ==
+
+= 1.0.8 =
+* Added option to generate front end pages (Privacy and Cookies)
+* Added option to display links in notice to front end pages.
+* Added option to change link url to front end pages.
 
 = 1.0.7 =
 * Added Chapel Cookies logo to plugin and styled plugin dashboard add links to sections.

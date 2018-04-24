@@ -2,7 +2,7 @@
 
 /**
  * Chapel Cookies - helpers
- * Version: 1.0.7
+ * Version: 1.0.8
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -191,8 +191,21 @@ function chapel_cookies_get_customise_current_options() {
 
    // build our current options associative array
    $current_options = array(
+     // Privacy Page
+     'chapel_cookies_customise_enable_privacy_page' => chapel_cookies_get_customise_option('chapel_cookies_customise_enable_privacy_page'),
+     'chapel_cookies_customise_generate_privacy_page' => chapel_cookies_get_customise_option('chapel_cookies_customise_generate_privacy_page'),
+     'chapel_cookies_customise_override_privacy_page_url' => chapel_cookies_get_customise_option('chapel_cookies_customise_override_privacy_page_url'),
+
+     // Cookie Page
+     'chapel_cookies_customise_enable_cookie_page' => chapel_cookies_get_customise_option('chapel_cookies_customise_enable_cookie_page'),
+     'chapel_cookies_customise_generate_cookie_page' => chapel_cookies_get_customise_option('chapel_cookies_customise_generate_cookie_page'),
+     'chapel_cookies_customise_override_cookie_page_url' => chapel_cookies_get_customise_option('chapel_cookies_customise_override_cookie_page_url'),
+
+     // Copy
      'chapel_cookies_customise_content_message' => chapel_cookies_get_customise_option('chapel_cookies_customise_content_message'),
      'chapel_cookies_customise_content_button_label' => chapel_cookies_get_customise_option('chapel_cookies_customise_content_button_label'),
+
+     // Styling
      'chapel_cookies_customise_colours_text' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_text'),
      'chapel_cookies_customise_colours_background' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_background'),
      'chapel_cookies_customise_colours_highlight' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_highlight'),
@@ -223,6 +236,36 @@ function chapel_cookies_get_customise_option( $option_name ) {
 
    // get the requested option
    switch( $option_name ) {
+
+     // Privacy Page
+     case 'chapel_cookies_customise_enable_privacy_page':
+       // enable privacy notice?
+       $option_value = (get_option('chapel_cookies_customise_enable_privacy_page')) ? get_option('chapel_cookies_customise_enable_privacy_page') : $defaults['chapel_cookies_customise_enable_privacy_page'];
+       break;
+     case 'chapel_cookies_customise_generate_privacy_page':
+       // auto generate privacy page?
+       $option_value = (get_option('chapel_cookies_customise_generate_privacy_page')) ? get_option('chapel_cookies_customise_generate_privacy_page') : $defaults['chapel_cookies_customise_generate_privacy_page'];
+       break;
+     case 'chapel_cookies_customise_override_privacy_page_url':
+       // URI to privacy page if not site root (leave blank for default location)
+       $option_value = (get_option('chapel_cookies_customise_override_privacy_page_url')) ? get_option('chapel_cookies_customise_override_privacy_page_url') : $defaults['chapel_cookies_customise_override_privacy_page_url'];
+       break;
+
+     // Cookie Page
+     case 'chapel_cookies_customise_enable_cookie_page':
+       // enable cookie notice?
+       $option_value = (get_option('chapel_cookies_customise_enable_cookie_page')) ? get_option('chapel_cookies_customise_enable_cookie_page') : $defaults['chapel_cookies_customise_enable_cookie_page'];
+       break;
+     case 'chapel_cookies_customise_generate_cookie_page':
+       // auto generate cookie page?
+       $option_value = (get_option('chapel_cookies_customise_generate_cookie_page')) ? get_option('chapel_cookies_customise_generate_cookie_page') : $defaults['chapel_cookies_customise_generate_cookie_page'];
+       break;
+     case 'chapel_cookies_customise_override_cookie_page_url':
+       // URI to cookie page if not site root (leave blank for default location)
+       $option_value = (get_option('chapel_cookies_customise_override_cookie_page_url')) ? get_option('chapel_cookies_customise_override_cookie_page_url') : $defaults['chapel_cookies_customise_override_cookie_page_url'];
+       break;
+
+     // Copy
      case 'chapel_cookies_customise_content_message':
        // notice message
        $option_value = (get_option('chapel_cookies_customise_content_message')) ? get_option('chapel_cookies_customise_content_message') : $defaults['chapel_cookies_customise_content_message'];
@@ -231,6 +274,8 @@ function chapel_cookies_get_customise_option( $option_name ) {
        // notice button label
        $option_value = (get_option('chapel_cookies_customise_content_button_label')) ? get_option('chapel_cookies_customise_content_button_label') : $defaults['chapel_cookies_customise_content_button_label'];
        break;
+
+     // Styling
      case 'chapel_cookies_customise_colours_text':
        // notice text colour
        $option_value = (get_option('chapel_cookies_customise_colours_text')) ? get_option('chapel_cookies_customise_colours_text') : $defaults['chapel_cookies_customise_colours_text'];
@@ -265,8 +310,17 @@ function chapel_cookies_get_customise_default_options() {
 
    // setup defaults array
    $defaults = array(
+     'chapel_cookies_customise_enable_privacy_page'=> 0,
+     'chapel_cookies_customise_generate_privacy_page'=> 0,
+     'chapel_cookies_customise_override_privacy_page_url'=> '',
+
+     'chapel_cookies_customise_enable_cookie_page'=> 0,
+     'chapel_cookies_customise_generate_cookie_page'=> 0,
+     'chapel_cookies_customise_override_cookie_page_url'=> '',
+
      'chapel_cookies_customise_content_message'=> 'We use cookies (“cookies”) to help give you the best experience on our site.<br>If you continue to use this site, we’ll assume that you’re happy for us to use cookies.',
      'chapel_cookies_customise_content_button_label'=> 'agree and close',
+
      'chapel_cookies_customise_colours_text'=> '#ffffff',
      'chapel_cookies_customise_colours_background'=> '#000000',
      'chapel_cookies_customise_colours_highlight'=> '#068100',

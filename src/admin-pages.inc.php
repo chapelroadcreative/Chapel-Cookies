@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - admin pages
- * Version: 1.0.7
+ * Version: 1.0.8
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -157,6 +157,77 @@
        <table class="form-table">
 
          <tbody>
+           <tr>
+             <th scope="row">
+                <label for="chapel_cookies_customise_enable_privacy_page">Display a link to a privacy page within the notice?</label>
+                <p>When enabled this plugin display a link to a privacy page at the bottom of the privacy notice.</p>
+             </th>
+             <td>
+               <input type="checkbox" name="chapel_cookies_customise_enable_privacy_page"');
+               if($options['chapel_cookies_customise_enable_privacy_page']) { echo ' checked'; }
+               echo('
+               > Tick to enable a link to a privacy page within the notice.
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
+                <label for="chapel_cookies_customise_generate_privacy_page">Enable auto-generation of a privacy page?</label>
+                <p>When enabled this plugin will check if a page with the slug \'privacy\' is created, if not it will create one with generic privacy information.</p>
+             </th>
+             <td>
+               <input type="checkbox" name="chapel_cookies_customise_generate_privacy_page"');
+               if($options['chapel_cookies_customise_generate_privacy_page']) { echo ' checked'; }
+               echo('
+               > Tick to enable auto-generation of a privacy page.
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
+             <label for="chapel_cookies_customise_override_privacy_page_url">Privacy page URI if not in root folder</label>
+             <p>Enter the full valid url to a privacy page (leave blank for default URI).</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_override_privacy_page_url" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_privacy_page_url'] . '">
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
+                <label for="chapel_cookies_customise_enable_cookie_page">Display a link to a cookies page within the notice?</label>
+                <p>When enabled this plugin display a link to a cookies page at the bottom of the privacy notice.</p>
+             </th>
+             <td>
+               <input type="checkbox" name="chapel_cookies_customise_enable_cookie_page"');
+               if($options['chapel_cookies_customise_enable_cookie_page']) { echo ' checked'; }
+               echo('
+               > Tick to enable a link to a cookie page within the notice.
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
+                <label for="chapel_cookies_customise_generate_cookie_page">Enable auto-generation of a cookies page?</label>
+                <p>When enabled this plugin will check if a page with the slug \'cookies\' is created, if not it will create one with generic cookie manangement information.</p>
+             </th>
+             <td>
+               <input type="checkbox" name="chapel_cookies_customise_generate_cookie_page"');
+               if($options['chapel_cookies_customise_generate_cookie_page']) { echo ' checked'; }
+               echo('
+               > Tick to enable auto-generation of a cookies page.
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
+             <label for="chapel_cookies_customise_override_cookie_page_url">Cookies page URI if not in root folder</label>
+             <p>Enter the full valid url to a cookies page (leave blank for default URI).</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_override_cookie_page_url" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_cookie_page_url'] . '">
+             </td>
+           </tr>
 
            <tr>
              <th scope="row">

@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - hooks
- * Version: 1.0.7
+ * Version: 1.0.8
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
