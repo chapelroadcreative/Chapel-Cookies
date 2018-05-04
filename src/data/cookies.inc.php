@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - cookies page data
- * Version: 1.0.9
+ * Version: 1.0.10
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative

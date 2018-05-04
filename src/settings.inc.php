@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - settings
- * Version: 1.0.9
+ * Version: 1.0.10
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -43,6 +43,7 @@
    register_setting('chapel_cookies_plugin_customise_options', 'chapel_cookies_customise_content_button_label');
 
    register_setting('chapel_cookies_plugin_customise_options', 'chapel_cookies_customise_colours_text');
+   register_setting('chapel_cookies_plugin_customise_options', 'chapel_cookies_customise_colours_button_text');
    register_setting('chapel_cookies_plugin_customise_options', 'chapel_cookies_customise_colours_background');
    register_setting('chapel_cookies_plugin_customise_options', 'chapel_cookies_customise_colours_highlight');
  }

@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - admin pages
- * Version: 1.0.9
+ * Version: 1.0.10
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -311,6 +311,16 @@
 
            <tr>
              <th scope="row">
+             <label for="chapel_cookies_customise_colours_highlight">Notice Highlight Colour</label>
+             <p>Edit the colour of the privacy &amp; cookie notice highlight colour (Notice title, right border and button colour).</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_colours_highlight" value=" ' . $options['chapel_cookies_customise_colours_highlight'] . '">
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
              <label for="chapel_cookies_customise_colours_text">Notice Text Colour</label>
              <p>Edit the colour of the text in the privacy &amp; cookie notice.</p>
              </th>
@@ -329,15 +339,15 @@
              </td>
            </tr>
 
-           <tr>
-             <th scope="row">
-             <label for="chapel_cookies_customise_colours_highlight">Notice Highlight Colour</label>
-             <p>Edit the colour of the privacy &amp; cookie notice highlight colour (Notice title, right border and button colour).</p>
-             </th>
-             <td>
-               <input type="text" name="chapel_cookies_customise_colours_highlight" value=" ' . $options['chapel_cookies_customise_colours_highlight'] . '">
-             </td>
-           </tr>
+          <tr>
+            <th scope="row">
+            <label for="chapel_cookies_customise_colours_button_text">Notice Button Label Colour</label>
+            <p>Edit the colour of the text label on the notice button.</p>
+            </th>
+            <td>
+              <input type="text" name="chapel_cookies_customise_colours_button_text" value=" ' . $options['chapel_cookies_customise_colours_button_text'] . '">
+            </td>
+          </tr>
 
          </tbody>
 

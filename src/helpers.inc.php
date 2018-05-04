@@ -2,7 +2,7 @@
 
 /**
  * Chapel Cookies - helpers
- * Version: 1.0.9
+ * Version: 1.0.10
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -210,6 +210,7 @@ function chapel_cookies_get_customise_current_options() {
 
      // Styling
      'chapel_cookies_customise_colours_text' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_text'),
+     'chapel_cookies_customise_colours_button_text' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_button_text'),
      'chapel_cookies_customise_colours_background' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_background'),
      'chapel_cookies_customise_colours_highlight' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_highlight'),
    );
@@ -295,6 +296,10 @@ function chapel_cookies_get_customise_option( $option_name ) {
        // notice text colour
        $option_value = (get_option('chapel_cookies_customise_colours_text')) ? get_option('chapel_cookies_customise_colours_text') : $defaults['chapel_cookies_customise_colours_text'];
        break;
+    case 'chapel_cookies_customise_colours_button_text':
+       // notice button label colour
+       $option_value = (get_option('chapel_cookies_customise_colours_button_text')) ? get_option('chapel_cookies_customise_colours_button_text') : $defaults['chapel_cookies_customise_colours_button_text'];
+       break;
      case 'chapel_cookies_customise_colours_background':
        // notice background color
        $option_value = (get_option('chapel_cookies_customise_colours_background')) ? get_option('chapel_cookies_customise_colours_background') : $defaults['chapel_cookies_customise_colours_background'];
@@ -341,6 +346,7 @@ function chapel_cookies_get_customise_default_options() {
      'chapel_cookies_customise_content_button_label'=> 'agree and close',
 
      'chapel_cookies_customise_colours_text'=> '#ffffff',
+     'chapel_cookies_customise_colours_button_text'=> '#ffffff',
      'chapel_cookies_customise_colours_background'=> '#000000',
      'chapel_cookies_customise_colours_highlight'=> '#068100',
    );
