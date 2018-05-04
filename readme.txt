@@ -4,7 +4,7 @@ Tags: EU, cookies, privacy, regulations, law.
 Requires at least: 4.0
 Tested up to: 4.9.5
 Requires PHP: 5.6
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ Please direct all support via the support system from where you acquired this pl
 If you acquired the plugin directly from Chapel Road Creative please email us at plugins@chapelroadcreative.co.uk referencing your support ID or company name.
 
 == Changelog ==
+
+= 1.0.9 =
+* Added option to change pop up title
+* Added option to change privacy and cookie link labels
 
 = 1.0.8 =
 * Added option to generate front end pages (Privacy and Cookies)

@@ -1,6 +1,6 @@
 /**
 * Chapel Cookies - public JS
-* Version: 1.0.8
+* Version: 1.0.9
 * Created: 19/04/2018
 * Last updated: 19/04/2018
 * Author: Derek O'Brien @ Chapel Road Creative
@@ -26,6 +26,13 @@
         $DBug = false;
 
         $privacy_enabled = chapel_cookies_public_js_main_notice.privacy_enabled;
+
+        if(chapel_cookies_public_js_main_notice.privacy_label == '') {
+          $privacy_title = "Read our privacy policy.";
+        } else {
+          $privacy_title = chapel_cookies_public_js_main_notice.privacy_label;
+        }
+
         if(chapel_cookies_public_js_main_notice.privacy_url == '') {
           $privacy_url = document.location.protocol + "//" + document.location.host + "/privacy/";
         } else {
@@ -33,12 +40,20 @@
         }
 
         $cookie_enabled = chapel_cookies_public_js_main_notice.cookie_enabled;
+
+        if(chapel_cookies_public_js_main_notice.cookie_label == '') {
+          $cookie_title = "Find out how to manage cookies.";
+        } else {
+          $cookie_title = chapel_cookies_public_js_main_notice.cookie_label;
+        }
+
         if(chapel_cookies_public_js_main_notice.privacy_url == '') {
           $cookie_url = document.location.protocol + "//" + document.location.host + "/cookies/";
         } else {
           $cookie_url = chapel_cookies_public_js_main_notice.privacy_url;
         }
 
+        $title = chapel_cookies_public_js_main_notice.title;
         $message = chapel_cookies_public_js_main_notice.message;
         $label = chapel_cookies_public_js_main_notice.label;
         $h = $('#cc_status').height() - 15;
@@ -59,15 +74,15 @@
 
         function addCC () {
             removeCC(); // if exists
-            $o =  '<div id="cc_status" class="notice"><h4>Privacy and cookies</h4>';
+            $o =  '<div id="cc_status" class="notice"><h4>' + $title + '</h4>';
               $o += '<p>' + $message + '</p>';
               $o += '<span class="exit">' + $label + '</span><br>';
               $o += '<span class="small">';
               if($privacy_enabled == "on") {
-                $o += '<a href="' + $privacy_url + '" target="_blank">Read our privacy policy</a><br>';
+                $o += '<a href="' + $privacy_url + '" target="_blank">' + $privacy_title + '</a><br>';
               }
               if($cookie_enabled == "on") {
-                $o += '<a href="' + $cookie_url + '" target="_blank">Find out how to manage cookies.</a>';
+                $o += '<a href="' + $cookie_url + '" target="_blank">' + $cookie_title + '</a>';
               }
               $o += '</span>';
             $o += '</div>';

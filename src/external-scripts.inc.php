@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - external scripts
- * Version: 1.0.8
+ * Version: 1.0.9
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -28,11 +28,14 @@
         'chapel_cookies_public_js_main_notice',
         array(
           'privacy_enabled' => $options['chapel_cookies_customise_enable_privacy_page'],
+          'privacy_label' => $options['chapel_cookies_customise_override_privacy_page_title'],
           'privacy_url' => $options['chapel_cookies_customise_override_privacy_page_url'],
 
           'cookie_enabled' => $options['chapel_cookies_customise_enable_cookie_page'],
+          'cookie_label' => $options['chapel_cookies_customise_override_cookie_page_title'],
           'cookie_url' => $options['chapel_cookies_customise_override_cookie_page_url'],
 
+          'title' => $options['chapel_cookies_customise_popup_title'],
           'message' => $options['chapel_cookies_customise_content_message'],
           'label' => $options['chapel_cookies_customise_content_button_label']
         )

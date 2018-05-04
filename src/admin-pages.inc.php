@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - admin pages
- * Version: 1.0.8
+ * Version: 1.0.9
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -158,6 +158,9 @@
 
          <tbody>
            <tr>
+              <th colspan="2"><h3>Privacy Setup</h3></th>
+           </tr>
+           <tr>
              <th scope="row">
                 <label for="chapel_cookies_customise_enable_privacy_page">Display a link to a privacy page within the notice?</label>
                 <p>When enabled this plugin display a link to a privacy page at the bottom of the privacy notice.</p>
@@ -185,12 +188,30 @@
 
            <tr>
              <th scope="row">
+             <label for="chapel_cookies_customise_override_privacy_page_title">Privacy Link Label</label>
+             <p>Short link label such as \'Privacy\', \'Privacy Policy\' etc..</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_override_privacy_page_title" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_privacy_page_title'] . '">
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
              <label for="chapel_cookies_customise_override_privacy_page_url">Privacy page URI if not in root folder</label>
              <p>Enter the full valid url to a privacy page (leave blank for default URI).</p>
              </th>
              <td>
                <input type="text" name="chapel_cookies_customise_override_privacy_page_url" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_privacy_page_url'] . '">
              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2"><hr></td>
+           </tr>
+
+           <tr>
+              <th colspan="2"><h3>Cookies Setup</h3></th>
            </tr>
 
            <tr>
@@ -221,11 +242,39 @@
 
            <tr>
              <th scope="row">
+             <label for="chapel_cookies_customise_override_cookie_page_title">Cookies Link Label</label>
+             <p>Short link label such as \'Cookies\', \'Cookie Policy\' etc..</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_override_cookie_page_title" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_cookie_page_title'] . '">
+             </td>
+           </tr>
+
+           <tr>
+             <th scope="row">
              <label for="chapel_cookies_customise_override_cookie_page_url">Cookies page URI if not in root folder</label>
              <p>Enter the full valid url to a cookies page (leave blank for default URI).</p>
              </th>
              <td>
                <input type="text" name="chapel_cookies_customise_override_cookie_page_url" placeholder="/" value=" ' . $options['chapel_cookies_customise_override_cookie_page_url'] . '">
+             </td>
+           </tr>
+
+           <tr>
+              <td colspan="2"><hr></td>
+           </tr>
+
+           <tr>
+              <th colspan="2"><h3>Pop Up Content</h3></th>
+           </tr>
+
+           <tr>
+             <th scope="row">
+             <label for="chapel_cookies_customise_popup_title">Pop Up Title</label>
+             <p>Short title such as \'Privacy & Cookies\', \'Cookies\' etc..</p>
+             </th>
+             <td>
+               <input type="text" name="chapel_cookies_customise_popup_title" placeholder="/" value=" ' . $options['chapel_cookies_customise_popup_title'] . '">
              </td>
            </tr>
 
@@ -250,6 +299,14 @@
               <td>
                 <input type="text" name="chapel_cookies_customise_content_button_label" value=" ' . $options['chapel_cookies_customise_content_button_label'] . '">
               </td>
+            </tr>
+
+            <tr>
+               <td colspan="2"><hr></td>
+            </tr>
+
+            <tr>
+               <th colspan="2"><h3>Pop Up Styles</h3></th>
             </tr>
 
            <tr>
