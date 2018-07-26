@@ -60,6 +60,9 @@ If you acquired the plugin directly from Chapel Road Creative please email us at
 == Changelog ==
 
 = 1.0.11 =
+* removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
+
+= 1.0.10 =
 * Added option to change button text colour as highlight colour sometimes clashed with text colour
 
 = 1.0.9 =
