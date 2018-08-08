@@ -1,6 +1,6 @@
 /**
  * Chapel Cookies - SCSS stylesheet
- * Version: 1.0.11
+ * Version: 1.0.12
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -9,30 +9,31 @@
  * Licence URI: https://www.gnu.org/gpl-2.0.html
  */
 
-$highlight: green;
-$color: white;
-$background-color: black;
-$link-color: #cccccc;
+$color-highlight: #cccccc;
+$color-text: #4a4a4a;
+$color-background: #ffffff;
+$color-button-text: #ffffff;
+$color-link: #cccccc;
 
 #cc_status {
     font-size: 14px;
     color: white;
-    background-color: black;
+    background-color: $color-background;
     position: fixed;
     right: 0;
     bottom: 0;
     padding: 15px 45px 15px 30px;
-    border-left: 20px solid green;
+    border-left: 20px solid $color-highlight;
     max-width: 320px;
     border-top-left-radius: 6px;
     z-index: 9999999999999;
     h4 {
         font-size: 16px;
         font-weight: bold;
-        color: green;
+        color: $color-highlight;
     }
     a {
-        color: #cccccc;
+        color: $color-link;
         text-decoration: none;
         &:focus,
         &:hover {
@@ -49,17 +50,17 @@ $link-color: #cccccc;
         font-weight: bold;
         padding: 5px 10px;
         margin-bottom: 15px;
-        border: 2px solid white;
+        border: 2px solid $color-button-text;
         border-radius: 4px;
-        color: white;
-        background-color: green;
+        color: $color-button-text;
+        background-color: $color-highlight;
         cursor: pointer;
     }
     .exit:focus,
     .exit:hover {
-        border: 2px solid green;
-        color: green;
-        background-color: white;
+        border: 2px solid $color-button-text;
+        color: $color-highlight;
+        background-color: $color-button-text;
     }
 
     #cc_credits {

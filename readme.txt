@@ -4,7 +4,7 @@ Tags: EU, cookies, privacy, regulations, law.
 Requires at least: 4.0
 Tested up to: 4.9.5
 Requires PHP: 5.6
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,11 @@ Please direct all support via the support system from where you acquired this pl
 If you acquired the plugin directly from Chapel Road Creative please email us at plugins@chapelroadcreative.co.uk referencing your support ID or company name.
 
 == Changelog ==
+
+= 1.0.12 =
+* added new setting to style colour of small print action_links
+* restructured order of default settings for css styles
+* restyled default settings to be more neutral
 
 = 1.0.11 =
 * removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
