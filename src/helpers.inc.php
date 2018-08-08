@@ -2,7 +2,7 @@
 
 /**
  * Chapel Cookies - helpers
- * Version: 1.0.11
+ * Version: 1.0.12
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -213,6 +213,7 @@ function chapel_cookies_get_customise_current_options() {
      'chapel_cookies_customise_colours_button_text' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_button_text'),
      'chapel_cookies_customise_colours_background' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_background'),
      'chapel_cookies_customise_colours_highlight' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_highlight'),
+     'chapel_cookies_customise_colours_link' => chapel_cookies_get_customise_option('chapel_cookies_customise_colours_link'),
    );
 
  } catch( Exception $e ) {
@@ -308,6 +309,10 @@ function chapel_cookies_get_customise_option( $option_name ) {
        // notice highlight colour
        $option_value = (get_option('chapel_cookies_customise_colours_highlight')) ? get_option('chapel_cookies_customise_colours_highlight') : $defaults['chapel_cookies_customise_colours_highlight'];
        break;
+     case 'chapel_cookies_customise_colours_link':
+       // notice highlight colour
+       $option_value = (get_option('chapel_cookies_customise_colours_link')) ? get_option('chapel_cookies_customise_colours_link') : $defaults['chapel_cookies_customise_colours_link'];
+       break;
    }
 
  } catch( Exception $e) {
@@ -345,10 +350,11 @@ function chapel_cookies_get_customise_default_options() {
      'chapel_cookies_customise_content_message'=> 'We use cookies (“cookies”) to help give you the best experience on our site.<br>If you continue to use this site, we’ll assume that you’re happy for us to use cookies.',
      'chapel_cookies_customise_content_button_label'=> 'agree and close',
 
-     'chapel_cookies_customise_colours_text'=> '#ffffff',
+     'chapel_cookies_customise_colours_highlight'=> '#cccccc',
+     'chapel_cookies_customise_colours_text'=> '#4a4a4a',
+     'chapel_cookies_customise_colours_background'=> '#ffffff',
      'chapel_cookies_customise_colours_button_text'=> '#ffffff',
-     'chapel_cookies_customise_colours_background'=> '#000000',
-     'chapel_cookies_customise_colours_highlight'=> '#068100',
+     'chapel_cookies_customise_colours_link'=> '#cccccc',
    );
 
  } catch( Exception $e) {

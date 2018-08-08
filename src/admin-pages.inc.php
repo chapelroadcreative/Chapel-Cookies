@@ -1,7 +1,7 @@
 <?php
 /**
  * Chapel Cookies - admin pages
- * Version: 1.0.11
+ * Version: 1.0.12
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
@@ -348,6 +348,16 @@
               <input type="text" name="chapel_cookies_customise_colours_button_text" value=" ' . $options['chapel_cookies_customise_colours_button_text'] . '">
             </td>
           </tr>
+
+         <tr>
+           <th scope="row">
+           <label for="chapel_cookies_customise_colours_link">Small Print Link Colour</label>
+           <p>Edit the colour of the small print links.</p>
+           </th>
+           <td>
+             <input type="text" name="chapel_cookies_customise_colours_link" value=" ' . $options['chapel_cookies_customise_colours_link'] . '">
+           </td>
+         </tr>
 
          </tbody>
 

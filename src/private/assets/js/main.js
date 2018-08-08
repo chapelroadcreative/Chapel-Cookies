@@ -1,6 +1,6 @@
 /**
  * Chapel Cookies - private JS
- * Version: 1.0.11
+ * Version: 1.0.12
  * Created: 19/04/2018
  * Last updated: 19/04/2018
  * Author: Derek O'Brien @ Chapel Road Creative
