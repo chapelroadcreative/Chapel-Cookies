@@ -3,7 +3,7 @@
  * ChapelCookies plugin file
  *
  * @package ChapelCookies\Main
- * @copyright Copyright (C) 2018, Derek O'Brien @ Chapel Road Creative - derek@chapelroadcreative.co.uk
+ * @copyright Copyright (C) 2018, Derek O'Brien @ Chapel Road Creative - plugins@chapelroadcreative.co.uk
  * @license https://www.gnu.org/gpl-2.0.html GNU General Public License, version 3 or higher
  *
  Plugin Name: Chapel Cookies
