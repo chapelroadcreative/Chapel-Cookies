@@ -4,7 +4,7 @@ Tags: EU, cookies, privacy, regulations, law.
 Requires at least: 4.0
 Tested up to: 4.9.8
 Requires PHP: 5.6
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ Please direct all support via the support system from where you acquired this pl
 If you acquired the plugin directly from Chapel Road Creative please email us at plugins@chapelroadcreative.co.uk referencing your support ID or company name.
 
 == Changelog ==
+
+= 1.0.13 =
+* edits made based on WP plugin submission review - modified headers and readme
 
 = 1.0.12 =
 * added new setting to style colour of small print links
