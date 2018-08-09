@@ -1,24 +1,19 @@
-/**
-* Chapel Cookies - public JS
-* Version: 1.0.12
-* Created: 19/04/2018
-* Last updated: 19/04/2018
-* Author: Derek O'Brien @ Chapel Road Creative
-* Author URI: http://chapelroadcreative.co.uk
-* Licence: GPL2
-* Licence URI: https://www.gnu.org/gpl-2.0.html
-*
-* Dependancies:
-* jQuery - http://jquery.com/
-* jQuery Cookies PLugin - https://github.com/js-cookie/js-cookie
-*
-* Variables:
-* $DBug - debug status (removes cookie after updating)
-* $privacy - URL to site privacy policy.
-* $cookies - URL to site cookie policy.
-* $message - Privacy/Cookie notice message.
-* $label - Privacy/Cookie notice agreement button label.
-*/
+/*
+ * ChapelCookies plugin file
+ *
+ * @package ChapelCookies\Public\Assets\Js
+ *
+ * Dependancies:
+ * jQuery - http://jquery.com/
+ * jQuery Cookies PLugin - https://github.com/js-cookie/js-cookie
+ *
+ * Variables:
+ * $DBug - debug status (removes cookie after updating)
+ * $privacy - URL to site privacy policy.
+ * $cookies - URL to site cookie policy.
+ * $message - Privacy/Cookie notice message.
+ * $label - Privacy/Cookie notice agreement button label.
+ */
 
     var $ = jQuery.noConflict();
     $( document ).ready(function() {

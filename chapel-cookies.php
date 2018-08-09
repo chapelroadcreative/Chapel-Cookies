@@ -1,14 +1,34 @@
 <?php
 /*
+ * ChapelCookies plugin file
+ *
+ * @package ChapelCookies\Main
+ * @copyright Copyright (C) 2018, Derek O'Brien @ Chapel Road Creative - derek@chapelroadcreative.co.uk
+ * @license https://www.gnu.org/gpl-2.0.html GNU General Public License, version 3 or higher
+ *
  Plugin Name: Chapel Cookies
  Plugin URI: http://plugins.chapelroadcreative.co.uk/chapel-cookies
  Description: EU cookie law compliance plugin, displays cookie notice with links to privacy notice and cookie management information.
  Version: 1.0.12
  Author: Derek O'Brien @ Chapel Road Creative
  Author URI: http://chapelroadcreative.co.uk
+ Text Domain: chapel-cookies
+ Domain Path: /languages
  Licence: GPL2
  Licence URI: https://www.gnu.org/gpl-2.0.html
- Text Domain: chapel-cookies
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /*  !0. Table of contents

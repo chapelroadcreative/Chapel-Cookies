@@ -1,13 +1,8 @@
 <?php
-/**
- * Chapel Cookies - external scripts
- * Version: 1.0.12
- * Created: 19/04/2018
- * Last updated: 26/07/2018
- * Author: Derek O'Brien @ Chapel Road Creative
- * Author URI: http://chapelroadcreative.co.uk
- * Licence: GPL2
- * Licence URI: https://www.gnu.org/gpl-2.0.html
+/*
+ * ChapelCookies plugin file
+ *
+ * @package ChapelCookies\Public
  */
 
  // 4.1
@@ -62,7 +57,7 @@
    if($hotjar_options['chapel_cookies_hotjar_enabled'] && ( $hotjar_options['chapel_cookies_hotjar_site_id'] != "" ) ) {
 
      wp_add_inline_script( 'chapel_cookies_public_js_main', "
-       <!-- Hotjar Tracking Code for derekobrien.net -->
+       <!-- Hotjar Tracking Code -->
           (function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
               h._hjSettings={hjid:" . $hotjar_options['chapel_cookies_hotjar_site_id'] . ",hjsv:6};
