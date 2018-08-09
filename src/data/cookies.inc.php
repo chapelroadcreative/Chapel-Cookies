@@ -1,13 +1,8 @@
 <?php
-/**
- * Chapel Cookies - cookies page data
- * Version: 1.0.12
- * Created: 19/04/2018
- * Last updated: 19/04/2018
- * Author: Derek O'Brien @ Chapel Road Creative
- * Author URI: http://chapelroadcreative.co.uk
- * Licence: GPL2
- * Licence URI: https://www.gnu.org/gpl-2.0.html
+/*
+ * ChapelCookies plugin file
+ *
+ * @package ChapelCookies\Data
  */
 
 function chapel_cookies_get_cookie_page_data() {

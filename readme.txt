@@ -2,17 +2,17 @@
 Contributors: chapelroadcreative
 Tags: EU, cookies, privacy, regulations, law.
 Requires at least: 4.0
-Tested up to: 4.9.5
+Tested up to: 4.9.8
 Requires PHP: 5.6
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin to comply with EU cookie regulations by implementing required info pages and a user notice.
+Plugin to help assist in compliance with EU cookie regulations by implementing info pages and a user notice.
 
 == Description ==
 
-Plugin to comply with EU cookie regulations by implementing required info pages and a user notice.
+Plugin to help assist in compliance with EU cookie regulations by implementing info pages and a user notice.
 
 The plugin can dynamically creates two pages within generic privacy information and user support for cookie management.
 Both these pages are linked to within the cookie notice to provide relevant information and support for the website user, either can be hidden if required.
@@ -59,8 +59,11 @@ If you acquired the plugin directly from Chapel Road Creative please email us at
 
 == Changelog ==
 
+= 1.0.13 =
+* edits made based on WP plugin submission review - modified headers and readme
+
 = 1.0.12 =
-* added new setting to style colour of small print action_links
+* added new setting to style colour of small print links
 * restructured order of default settings for css styles
 * restyled default settings to be more neutral
 
