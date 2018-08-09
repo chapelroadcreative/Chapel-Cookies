@@ -8,7 +8,7 @@
  *
  Plugin Name: Chapel Cookies
  Plugin URI: http://plugins.chapelroadcreative.co.uk/chapel-cookies
- Description: EU cookie law compliance plugin, displays cookie notice with links to privacy notice and cookie management information.
+ Description: Plugin to assist with EU cookie law compliance, displays cookie notice with links to privacy notice and cookie management information.
  Version: 1.0.13
  Author: Derek O'Brien @ Chapel Road Creative
  Author URI: http://chapelroadcreative.co.uk
