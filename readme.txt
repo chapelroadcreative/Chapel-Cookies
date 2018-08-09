@@ -60,15 +60,15 @@ If you acquired the plugin directly from Chapel Road Creative please email us at
 == Changelog ==
 
 = 1.0.13 =
-* edits made based on WP plugin submission review - modified headers and readme
+* Edits made based on WP plugin submission review - modified headers and readme
 
 = 1.0.12 =
-* added new setting to style colour of small print links
-* restructured order of default settings for css styles
-* restyled default settings to be more neutral
+* Added new setting to style colour of small print links
+* Restructured order of default settings for css styles
+* Restyled default settings to be more neutral
 
 = 1.0.11 =
-* removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
+* Removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
 
 = 1.0.10 =
 * Added option to change button text colour as highlight colour sometimes clashed with text colour
