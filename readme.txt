@@ -25,13 +25,16 @@ Pages:
 *   "Cookies" - http://site-domain/cookies
 
     Note that some editing of the privacy and cookie pages is required to add relevant information about your website.
-    If the privacy or cookie page already exists prior to activating the plugin the original pages will not be overwritten,
-    however should you wish to use the pages provided by the plugin you can safely delete your privacy and cookie pages ensuring
-    to empty the trash and the plugin will auto generate the plugin pages for you.
+    If the privacy or cookie page already exists prior to activating the plugin the original pages will not be overwritten, however should you wish to use the pages provided by the plugin you can safely delete your privacy and cookie pages ensuring to empty the trash and the plugin will auto generate the plugin pages for you.
+    Do not enable Google Analytics or Hotjar in this plugin if they are already enabled on your website whether hardcoded or via another plugins as this will cause code conflicts.
 
-    Do not enable Google Analytics or Hotjar in this plugin if they are already enabled on your website whether hardcoded or via another plugins
-    as this will cause code conflicts.
+== Screenshots ==
 
+    1. Chapel Cookies front end default notice
+    2. Plugin page
+    3. Chapel Cookies settings page
+    4. Google Analytics settings page
+    5. Hotjar settings page
 
 == Installation ==
 
@@ -60,15 +63,15 @@ If you acquired the plugin directly from Chapel Road Creative please email us at
 == Changelog ==
 
 = 1.0.13 =
-* edits made based on WP plugin submission review - modified headers and readme
+* Edits made based on WP plugin submission review - modified headers and readme
 
 = 1.0.12 =
-* added new setting to style colour of small print links
-* restructured order of default settings for css styles
-* restyled default settings to be more neutral
+* Added new setting to style colour of small print links
+* Restructured order of default settings for css styles
+* Restyled default settings to be more neutral
 
 = 1.0.11 =
-* removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
+* Removed script tags in 'wp_add_inline_script()' in 'inc/external-scripts.php' which were originally added by mistake
 
 = 1.0.10 =
 * Added option to change button text colour as highlight colour sometimes clashed with text colour
