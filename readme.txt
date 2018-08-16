@@ -25,13 +25,16 @@ Pages:
 *   "Cookies" - http://site-domain/cookies
 
     Note that some editing of the privacy and cookie pages is required to add relevant information about your website.
-    If the privacy or cookie page already exists prior to activating the plugin the original pages will not be overwritten,
-    however should you wish to use the pages provided by the plugin you can safely delete your privacy and cookie pages ensuring
-    to empty the trash and the plugin will auto generate the plugin pages for you.
+    If the privacy or cookie page already exists prior to activating the plugin the original pages will not be overwritten, however should you wish to use the pages provided by the plugin you can safely delete your privacy and cookie pages ensuring to empty the trash and the plugin will auto generate the plugin pages for you.
+    Do not enable Google Analytics or Hotjar in this plugin if they are already enabled on your website whether hardcoded or via another plugins as this will cause code conflicts.
 
-    Do not enable Google Analytics or Hotjar in this plugin if they are already enabled on your website whether hardcoded or via another plugins
-    as this will cause code conflicts.
+== Screenshots ==
 
+    1. Chapel Cookies front end default notice
+    2. Plugin page
+    3. Chapel Cookies settings page
+    4. Google Analytics settings page
+    5. Hotjar settings page
 
 == Installation ==
 
